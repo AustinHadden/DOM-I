@@ -100,3 +100,19 @@ contactContent[2].textContent = "sales@greatidea.io";
 let footerContent = document.querySelector("footer p");
 
 footerContent.textContent = "Copyright Great Idea! 2018";
+
+// style changes
+
+navContent.forEach( element => { element.style.color = 'green'})
+
+// append and prepend
+
+let newLink = document.createElement("a");
+
+newLink.textContent = "NEW!";
+
+let parentElement = document.querySelector("nav");
+
+parentElement.append(newLink);
+
+parentElement.prepend(newLink);
